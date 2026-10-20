@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#242b30">
+  <meta name="description" content="ClimaFrost: portfólio de climatização com instalação, manutenção e soluções de conforto térmico. Modelo profissional personalizável.">
+  <title>ClimaFrost — Precisão técnica. Conforto em cada grau.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Personalize o nome, os textos e as experiências. Todo o perfil é demonstrativo. -->
+  <a class="visually-hidden-focusable skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Navbar fixa: o componente Collapse do Bootstrap controla o menu mobile. -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" aria-label="Navegação principal">
+    <div class="container">
+      <a class="navbar-brand d-inline-flex align-items-center gap-2" href="#inicio" aria-label="ClimaFrost, início">
+        <span class="brand-mark"><i class="bi bi-snow" aria-hidden="true"></i></span>
+        <span class="brand-name">clima<span>frost</span><span class="brand-dot">.</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menu">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="#inicio" aria-current="page">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-dark nav-contact" href="#contato">Vamos conversar <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="progress-line" id="scrollProgress" aria-hidden="true"></div>
+
+  <main id="conteudo">
+    <!-- Hero: imagem original de climatização, identidade e chamada principal. -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-layout">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-content reveal">
+            <div class="badge-availability"><span class="status-dot" aria-hidden="true"></span> Engenharia do conforto</div>
+            <p class="hero-name">RAFAEL MARTINS <span>/</span> ESPECIALISTA EM CLIMATIZAÇÃO</p>
+            <h1>Precisão técnica.<br>Conforto em<br><span>cada grau.</span></h1>
+            <p class="hero-description">Transformo ambientes com soluções de climatização que unem desempenho, eficiência e cuidado em cada detalhe.</p>
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a href="#projetos" class="btn btn-dark">Conheça meus projetos <i class="bi bi-arrow-up-right ms-3" aria-hidden="true"></i></a>
+              <a href="#contato" class="btn btn-outline-dark">Fale comigo <i class="bi bi-arrow-right ms-3" aria-hidden="true"></i></a>
+            </div>
+            <div class="hero-meta"><i class="bi bi-geo-alt" aria-hidden="true"></i><span>Atendimento residencial e comercial</span><span class="meta-separator" aria-hidden="true"></span><span>São Paulo, SP</span></div>
+          </div>
+          <div class="col-lg-6 reveal delay-1">
+            <div class="hero-visual">
+              <img class="hero-image" src="assets/hero-hvac.webp" alt="Imagem ilustrativa de um profissional inspecionando um ar-condicionado em um ambiente contemporâneo" width="1200" height="800" fetchpriority="high">
+              <span class="visual-index"><i class="bi bi-snow" aria-hidden="true"></i> CLIMAFROST / 01</span>
+              <div class="photo-caption"><span class="status-dot" aria-hidden="true"></span> Tecnologia que você sente.</div>
+              <div class="climate-card" aria-label="Conforto térmico: 22 graus Celsius">
+                <div class="climate-top"><i class="bi bi-wind" aria-hidden="true"></i><span>CONFORTO TÉRMICO</span><span class="status-dot" aria-hidden="true"></span></div>
+                <div class="climate-temp">22<span>°C</span></div>
+                <div class="climate-bottom"><span>O clima ideal.</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container hero-scroll"><a href="#sobre"><span>EXPLORE O PORTFÓLIO</span><i class="bi bi-arrow-down" aria-hidden="true"></i></a><span class="hero-edition">TÉCNICA & CONFORTO — PORTFÓLIO</span></div>
+    </section>
+
+    <!-- Faixa de especialidades: apoio editorial, sem acrescentar projetos. -->
+    <div class="service-strip">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-4 service-item"><i class="bi bi-tools" aria-hidden="true"></i><div><span class="service-number">01 / INSTALAÇÃO</span><h2 class="service-title">Precisão desde o início</h2><p class="service-copy">O equipamento certo, no lugar certo.</p></div></div>
+          <div class="col-md-4 service-item"><i class="bi bi-shield-check" aria-hidden="true"></i><div><span class="service-number">02 / MANUTENÇÃO</span><h2 class="service-title">Cuidado que faz durar</h2><p class="service-copy">Mais vida útil. Menos imprevistos.</p></div></div>
+          <div class="col-md-4 service-item"><i class="bi bi-lightning-charge" aria-hidden="true"></i><div><span class="service-number">03 / EFICIÊNCIA</span><h2 class="service-title">Desempenho inteligente</h2><p class="service-copy">Conforto com consumo consciente.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sobre mim: representação visual técnica construída em CSS. -->
+    <section id="sobre" class="section-pad about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal">
+            <div class="about-visual">
+              <div class="technical-grid" aria-hidden="true"></div>
+              <div class="technical-label"><i class="bi bi-snow" aria-hidden="true"></i><span>O EQUILÍBRIO É TÉCNICO.</span></div>
+              <div class="orbit" aria-hidden="true"><div class="orbit-inner"></div></div>
+              <div class="dial-core"><i class="bi bi-wind" aria-hidden="true"></i><span class="dial-temp">22<span>°</span></span><span class="dial-caption">A SENSAÇÃO É SUA.</span></div>
+              <div class="technical-bottom"><span>Climatização pensada<br>para pessoas.</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 about-copy reveal delay-1">
+            <p class="section-kicker"><span>01</span> / SOBRE MIM</p>
+            <h2 class="section-title">Por trás de um clima<br>perfeito, existe cuidado.</h2>
+            <p class="section-lead">Sou Rafael Martins, especialista em climatização. Acredito que um bom projeto vai além de instalar um equipamento: ele começa por entender quem vive e trabalha naquele espaço.</p>
+            <p class="about-text">Minha abordagem combina atenção técnica, organização e comunicação clara. Do dimensionamento à manutenção, cada etapa é pensada para entregar um ambiente confortável e um sistema confiável.</p>
+            <ul class="about-features list-unstyled">
+              <li><span class="feature-check"><i class="bi bi-check2" aria-hidden="true"></i></span> Soluções dimensionadas para cada ambiente</li>
+              <li><span class="feature-check"><i class="bi bi-check2" aria-hidden="true"></i></span> Instalação cuidadosa e acabamento limpo</li>
+              <li><span class="feature-check"><i class="bi bi-check2" aria-hidden="true"></i></span> Atendimento próximo, do início ao pós-serviço</li>
+            </ul>
+            <div class="about-signature"><div><span class="signature-name">Rafael Martins</span><span class="signature-role">Técnica com propósito. Conforto com cuidado.</span></div><i class="bi bi-snow" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio: exatamente dois projetos de exemplo, cada um com detalhes em modal. -->
+    <section id="projetos" class="section-pad projects-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker"><span>02</span> / PROJETOS SELECIONADOS</p><h2 class="section-title">Conforto, na prática.</h2><p class="section-lead">Do lar ao ambiente de trabalho. Soluções que fazem a diferença.</p></div>
+          <span class="projects-label">02 PROJETOS <i class="bi bi-arrow-down-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <article class="project-card">
+              <div class="project-media"><img src="assets/projeto-residencial.jpg" alt="Sala contemporânea com sistema de ar-condicionado integrado ao ambiente" width="858" height="572" loading="lazy"><span class="project-chip"><i class="bi bi-house" aria-hidden="true"></i> RESIDENCIAL</span></div>
+              <div class="project-body">
+                <h3 class="project-title">Um refúgio de conforto.</h3>
+                <p class="project-description">Climatização residencial que respeita a arquitetura e transforma a rotina, com operação silenciosa e temperatura equilibrada.</p>
+                <div class="project-tags"><span>Split inverter</span><span>Instalação</span><span>Conforto térmico</span></div>
+                <div class="project-bottom"><button class="project-link" type="button" data-bs-toggle="modal" data-bs-target="#projetoResidencial">Explorar projeto <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button><span class="project-year">PROJETO 01</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 reveal delay-1">
+            <article class="project-card">
+              <div class="project-media"><img src="assets/projeto-comercial.jpeg" alt="Equipamentos de climatização comercial instalados em cobertura técnica" width="1920" height="1280" loading="lazy"><span class="project-chip"><i class="bi bi-building" aria-hidden="true"></i> COMERCIAL</span></div>
+              <div class="project-body">
+                <h3 class="project-title">Desempenho em cada ambiente.</h3>
+                <p class="project-description">Solução de climatização comercial com planejamento técnico, controle por zonas e foco na continuidade da operação.</p>
+                <div class="project-tags"><span>Sistema VRF</span><span>Planejamento</span><span>Eficiência</span></div>
+                <div class="project-bottom"><button class="project-link" type="button" data-bs-toggle="modal" data-bs-target="#projetoComercial">Explorar projeto <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button><span class="project-year">PROJETO 02</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trajetória demonstrativa: substitua pelos estudos e experiências reais. -->
+    <section id="experiencia" class="section-pad experience-section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 reveal"><p class="section-kicker"><span>03</span> / EXPERIÊNCIA & ESTUDOS</p><h2 class="section-title">Conhecimento que<br>vira solução.</h2><p class="section-lead">Uma trajetória construída com prática, aprendizado contínuo e atenção aos detalhes.</p><a class="section-link" href="#contato">Vamos falar do seu projeto <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+          <div class="col-lg-7 offset-lg-1 reveal delay-1">
+            <div class="timeline-list">
+              <article class="timeline-item"><div class="timeline-date"><span class="timeline-dot" aria-hidden="true"></span>2022 — ATUAL</div><div class="timeline-content"><h3 class="timeline-title">Especialista em climatização</h3><p class="timeline-subtitle">Atuação independente</p><p class="timeline-description">Instalação e manutenção de sistemas residenciais e comerciais, com foco no dimensionamento e na qualidade de execução.</p><div class="timeline-tags"><span>Instalação</span><span>Diagnóstico</span></div></div></article>
+              <article class="timeline-item"><div class="timeline-date"><span class="timeline-dot" aria-hidden="true"></span>2020 — 2022</div><div class="timeline-content"><h3 class="timeline-title">Técnico em refrigeração</h3><p class="timeline-subtitle">Experiência em campo</p><p class="timeline-description">Rotinas preventivas, identificação de falhas e acompanhamento de projetos de climatização em diferentes ambientes.</p><div class="timeline-tags"><span>Manutenção</span><span>Refrigeração</span></div></div></article>
+              <article class="timeline-item"><div class="timeline-date"><span class="timeline-dot" aria-hidden="true"></span>2018 — 2020</div><div class="timeline-content"><h3 class="timeline-title">Formação técnica</h3><p class="timeline-subtitle">Refrigeração e climatização</p><p class="timeline-description">Fundamentos de sistemas térmicos, elétrica aplicada, boas práticas de instalação e segurança no trabalho.</p><div class="timeline-tags"><span>Formação</span><span>Boas práticas</span></div></div></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato sem backend: valida os campos e apresenta uma prévia, sem simular envio. -->
+    <section id="contato" class="section-pad contact-section">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-5 reveal">
+            <div class="contact-panel">
+              <p class="section-kicker"><span>04</span> / VAMOS CONVERSAR</p>
+              <h2 class="section-title">Seu próximo projeto<br>começa com uma<br>boa conversa.</h2>
+              <p class="section-lead">Conte o que você precisa. Vamos encontrar a solução ideal para o seu ambiente.</p>
+              <div class="contact-detail"><span class="contact-icon"><i class="bi bi-envelope" aria-hidden="true"></i></span><div><span class="contact-label">E-MAIL DE EXEMPLO</span><span class="contact-value">contato@climafrost.example</span></div></div>
+              <div class="contact-detail"><span class="contact-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span><div><span class="contact-label">LOCALIZAÇÃO</span><span class="contact-value">São Paulo, SP</span></div></div>
+              <div class="contact-note"><span class="status-dot" aria-hidden="true"></span> Clareza em cada etapa. Cuidado em cada detalhe.</div>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 reveal delay-1">
+            <form id="contactForm" class="contact-form" novalidate>
+              <p class="eyebrow">CONTE SOBRE SUA IDEIA</p>
+              <div class="row g-4">
+                <div class="col-sm-6"><label for="nome" class="form-label">Seu nome <span aria-hidden="true">*</span></label><input class="form-control" type="text" id="nome" name="nome" placeholder="Como posso te chamar?" autocomplete="name" minlength="2" maxlength="100" required aria-describedby="nomeError"><div class="invalid-feedback" id="nomeError">Informe seu nome (mínimo de 2 caracteres).</div></div>
+                <div class="col-sm-6"><label for="email" class="form-label">Seu e-mail <span aria-hidden="true">*</span></label><input class="form-control" type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" maxlength="254" required aria-describedby="emailError"><div class="invalid-feedback" id="emailError">Informe um endereço de e-mail válido.</div></div>
+                <div class="col-sm-6"><label for="telefone" class="form-label">Telefone <span class="text-muted">(opcional)</span></label><input class="form-control" type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" maxlength="25"></div>
+                <div class="col-sm-6"><label for="servico" class="form-label">O que você precisa? <span aria-hidden="true">*</span></label><select class="form-select" id="servico" name="servico" required aria-describedby="servicoError"><option value="" selected disabled>Selecione um serviço</option><option>Instalação de ar-condicionado</option><option>Manutenção preventiva</option><option>Diagnóstico e reparo</option><option>Projeto de climatização</option><option>Outro assunto</option></select><div class="invalid-feedback" id="servicoError">Selecione o serviço desejado.</div></div>
+                <div class="col-12"><label for="mensagem" class="form-label">Fale sobre seu projeto <span aria-hidden="true">*</span></label><textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Conte sobre o ambiente, suas necessidades e como posso ajudar..." minlength="10" maxlength="2000" required aria-describedby="mensagemError mensagemHelp"></textarea><div class="invalid-feedback" id="mensagemError">Descreva sua necessidade em pelo menos 10 caracteres.</div><p class="form-help" id="mensagemHelp">Os campos com * são obrigatórios.</p></div>
+                <div class="col-12"><button class="btn btn-dark form-submit" type="submit">Preparar mensagem <i class="bi bi-arrow-up-right ms-3" aria-hidden="true"></i></button><p class="form-disclaimer"><i class="bi bi-info-circle" aria-hidden="true"></i> Formulário demonstrativo. Os dados não são enviados nem armazenados.</p></div>
+              </div>
+              <div id="formStatus" class="form-status alert alert-info mt-4 d-none" role="status" aria-live="polite"></div>
+              <noscript><p class="alert alert-info">Esta prévia utiliza JavaScript para validar o formulário. Ative-o para experimentar. Não há envio de dados.</p></noscript>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: redes sociais em modo demonstrativo até configurar os perfis reais. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="footer-brand d-inline-flex align-items-center gap-2" href="#inicio">
+            <span class="brand-mark"><i class="bi bi-snow" aria-hidden="true"></i></span>
+            <span class="brand-name">clima<span>frost</span><span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-line">Precisão técnica. Conforto em cada grau.</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#sobre">Sobre mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <!-- Substitua os endereços das plataformas pelos seus perfis profissionais. -->
+        <div class="social-links">
+          <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram (nova aba)" title="Instagram — personalize seu perfil"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn (nova aba)" title="LinkedIn — personalize seu perfil"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a class="social-link" href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp (nova aba)" title="WhatsApp — personalize seu contato"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="currentYear">2026</span> ClimaFrost. Modelo de portfólio.</span><span>Feito com precisão. Pensado para pessoas. <i class="bi bi-snow" aria-hidden="true"></i></span></div>
+      <p class="demo-note">Perfil, experiências e projetos ilustrativos. Personalize com seus dados e conecte seus canais de contato.</p>
+    </div>
+  </footer>
+  <a class="scroll-top" id="scrollTop" href="#inicio" aria-label="Voltar ao início"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
+
+  <!-- Detalhes dos dois projetos. O Bootstrap gerencia foco e tecla Escape. -->
+  <div class="modal fade" id="projetoResidencial" tabindex="-1" aria-labelledby="residencialTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header"><div><p class="modal-kicker">PROJETO 01 / RESIDENCIAL</p><h2 class="modal-title fs-4" id="residencialTitle">Um refúgio de conforto.</h2></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar detalhes"></button></div><div class="modal-body"><img class="modal-project-image" src="assets/projeto-residencial.jpg" alt="Ambiente residencial climatizado" width="858" height="572" loading="lazy"><p class="mt-4">Um conceito de climatização para uma sala de estar integrada, equilibrando o conforto térmico, a acústica e a estética do ambiente.</p><div class="detail-list"><div class="detail-item"><h3 class="fs-6">O desafio</h3><p>Distribuir o ar de forma agradável sem direcionar o fluxo para as áreas de permanência e sem comprometer o projeto de interiores.</p></div><div class="detail-item"><h3 class="fs-6">A solução</h3><p>Dimensionamento conforme a carga térmica, escolha de equipamento inverter e instalação com tubulação organizada e acabamento discreto.</p></div><div class="detail-item"><h3 class="fs-6">O foco</h3><p>Operação silenciosa, acesso para manutenção e uso responsável de energia.</p></div></div><p class="form-help mb-0">Projeto demonstrativo. A imagem ilustra o conceito, não uma execução real deste perfil.</p></div><div class="modal-footer"><button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Fechar</button><a href="#contato" class="btn btn-dark project-contact" data-bs-dismiss="modal">Quero um projeto assim <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i></a></div></div></div></div>
+  <div class="modal fade" id="projetoComercial" tabindex="-1" aria-labelledby="comercialTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header"><div><p class="modal-kicker">PROJETO 02 / COMERCIAL</p><h2 class="modal-title fs-4" id="comercialTitle">Desempenho em cada ambiente.</h2></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar detalhes"></button></div><div class="modal-body"><img class="modal-project-image" src="assets/projeto-comercial.jpeg" alt="Sistema comercial em área técnica de um edifício" width="1920" height="1280" loading="lazy"><p class="mt-4">Um conceito de climatização para um ambiente corporativo com diferentes áreas de uso, rotinas e demandas de temperatura.</p><div class="detail-list"><div class="detail-item"><h3 class="fs-6">O desafio</h3><p>Atender ambientes com ocupações variadas, mantendo o conforto durante a jornada de trabalho e a operação do espaço.</p></div><div class="detail-item"><h3 class="fs-6">A solução</h3><p>Planejamento de um sistema com controle por zonas, organização da área técnica e integração com uma rotina preventiva.</p></div><div class="detail-item"><h3 class="fs-6">O foco</h3><p>Desempenho consistente, facilidade de manutenção e eficiência operacional.</p></div></div><p class="form-help mb-0">Projeto demonstrativo. A imagem ilustra o conceito, não uma execução real deste perfil.</p></div><div class="modal-footer"><button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Fechar</button><a href="#contato" class="btn btn-dark project-contact" data-bs-dismiss="modal">Quero um projeto assim <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i></a></div></div></div></div>
+  <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="socialTitle">Redes sociais</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body"><p id="socialMessage" class="mb-0"></p></div><div class="modal-footer"><button type="button" class="btn btn-dark" data-bs-dismiss="modal">Entendi</button></div></div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript discreto no próprio HTML, mantendo os dois arquivos solicitados. -->
+  <script>
+    (() => {
+      'use strict';
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const nav = document.getElementById('mainNav');
+      const menu = document.getElementById('navbarMenu');
+      const progress = document.getElementById('scrollProgress');
+      const scrollTop = document.getElementById('scrollTop');
+      const navLinks = document.querySelectorAll('#navbarMenu .nav-link');
+
+      // Revelações progressivas: todo o conteúdo continua acessível sem JavaScript.
+      if ('IntersectionObserver' in window && !reducedMotion) {
+        document.documentElement.classList.add('js-reveal');
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+      }
+
+      // Menu ativo em função da seção e recolhimento após selecionar um link no celular.
+      if ('IntersectionObserver' in window) {
+        const sectionObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach(link => {
+              const active = link.getAttribute('href') === '#' + entry.target.id;
+              link.classList.toggle('active', active);
+              if (active) link.setAttribute('aria-current', 'page');
+              else link.removeAttribute('aria-current');
+            });
+          });
+        }, { rootMargin: '-20% 0px -55% 0px', threshold: 0 });
+        document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
+      }
+      menu.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', () => {
+          if (menu.classList.contains('show') && window.bootstrap) {
+            bootstrap.Collapse.getOrCreateInstance(menu).hide();
+          }
+        });
+      });
+
+      // Progresso e retorno ao topo, com atualização limitada a um frame.
+      let scrollScheduled = false;
+      const updateScroll = () => {
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (height > 0 ? window.scrollY / height * 100 : 0) + '%';
+        nav.classList.toggle('is-scrolled', window.scrollY > 20);
+        scrollTop.classList.toggle('show', window.scrollY > 500);
+        scrollScheduled = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!scrollScheduled) {
+          scrollScheduled = true;
+          window.requestAnimationFrame(updateScroll);
+        }
+      }, { passive: true });
+      window.addEventListener('resize', updateScroll);
+      updateScroll();
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Validação nativa + Bootstrap. Não há transmissão, armazenamento ou falsa confirmação.
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        form.nome.value = form.nome.value.trim();
+        form.email.value = form.email.value.trim();
+        form.mensagem.value = form.mensagem.value.trim();
+        form.nome.setCustomValidity(form.nome.value.length < 2 ? 'Informe pelo menos 2 caracteres.' : '');
+        form.mensagem.setCustomValidity(form.mensagem.value.length < 10 ? 'Informe pelo menos 10 caracteres.' : '');
+        form.classList.add('was-validated');
+        if (!form.checkValidity()) {
+          status.classList.add('d-none');
+          form.querySelector(':invalid').focus();
+          return;
+        }
+        status.replaceChildren();
+        const title = document.createElement('strong');
+        title.textContent = 'Sua mensagem está pronta, ' + form.nome.value + '.';
+        const copy = document.createElement('p');
+        copy.className = 'mt-2 mb-0';
+        copy.textContent = 'Serviço: ' + form.servico.value + '. Esta é uma prévia do formulário: a mensagem não foi enviada. Para receber contatos reais, conecte um serviço de envio e substitua os dados demonstrativos.';
+        status.append(title, copy);
+        status.classList.remove('d-none');
+        status.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' });
+      });
+      form.addEventListener('input', event => {
+        status.classList.add('d-none');
+        if (event.target.setCustomValidity) event.target.setCustomValidity('');
+      });
+
+      // Feche o modal antes de rolar para o formulário de contato.
+      document.querySelectorAll('.project-contact').forEach(link => {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          const modal = link.closest('.modal');
+          modal.addEventListener('hidden.bs.modal', () => {
+            document.getElementById('contato').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' });
+          }, { once: true });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
